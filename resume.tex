@@ -1,6 +1,18 @@
-\documentclass{article}
-\usepackage[a4paper, total={7in, 10in}]{geometry}
+\documentclass[10pt, a4paper]{article}
+\usepackage[total={7in, 10in}]{geometry}
 \usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+% remove extra section spacing
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+% remove extra subsection spacing
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+% remove paragraph spacing
+\titlespacing*{\paragraph}{0pt}{0pt}{0pt}
+% remove extra list spacing
+\setitemize{noitemsep, nosep, topsep=0pt,parsep=0pt,partopsep=0pt, itemsep=0pt}
+\singlespacing
 \pagenumbering{gobble}
 \input{glyphtounicode}
 \pdfgentounicode=1
