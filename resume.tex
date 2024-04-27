@@ -5,20 +5,22 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 % remove extra section spacing
-\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\section}{0pt}{10pt}{0pt}
 % remove extra subsection spacing
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 % remove paragraph spacing
 \titlespacing*{\paragraph}{0pt}{0pt}{0pt}
 % remove extra list spacing
 \setitemize{noitemsep, nosep, topsep=0pt,parsep=0pt,partopsep=0pt, itemsep=0pt}
+% set subsection font size to slightly smaller than normal
+\titleformat*{\subsection}{\normalsize\bfseries}
 \singlespacing
 \pagenumbering{gobble}
 \input{glyphtounicode}
 \pdfgentounicode=1
 \begin{document}
 
-% title and contact information
+%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE AND CONTACT INFO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{\vspace{-1.5cm}\textbf{Ridvik Pal}\vspace{-1.5cm}}
 \date{}
 \maketitle
@@ -32,22 +34,24 @@
     \href{https://github.com/ridvikpal}{\underline{github.com/ridvikpal}}
     \hfill
     \href{https://www.linkedin.com/in/ridvik-pal}{\underline{linkedin.com/in/ridvik-pal}}
-\end{center}
+\end{center}\vspace{-10pt}
 
-% skills section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SKILLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Skills}
 \textbf{Languages:} Python, Java, C++, SQL, Microsoft VBA, \LaTeX \\
 \textbf{Tools:} MySQL, PostgreSQL, Git, GitHub, Microsoft Excel, Maven \\
 \textbf{Frameworks/Libraries:} Spring Boot, JavaFX, Qt, Pandas, Plotly, Matplotlib \\
 \textbf{Concepts:} DevOps, REST APIs, Debugging, Multithreading, Engineering Design
 
-% education section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EDUCATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Education}
 \subsection*{University of Toronto \hfill \normalfont{\textit{Sep 2021 - May 2026}}}
 B.A.Sc. in Computer Engineering with Minor in Artificial Intelligence (AI) and Business
 
-% work experience section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Work Experience}
+
 \subsection*{Intern Software Engineer \hfill \normalfont{\textit{May 2024 - August 2025}}}
 \textit{Xero - Toronto, ON}
 \begin{itemize}
@@ -70,8 +74,16 @@ B.A.Sc. in Computer Engineering with Minor in Artificial Intelligence (AI) and B
     \item Am currently a 5-star rated tutor on the platform, receiving glowing recommendations from students and their parents.
 \end{itemize}
 
-% projects section
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROJECTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Projects}
+
+\subsection*{MarkedUp}
+\textit{Python, Virtual Environments, REST APIs, PyQt5, Plotly, Pandas, Git}
+\begin{itemize}
+    \item Python desktop stock market app inspired by Yahoo Finance, built using the TwelveData REST API and PyQT5 GUI library.
+    \item Supports stock quotes for over 20,000 stocks, interactive candlestick charts, smart autocomplete equity search, favourites watchlist, a custom GUI with light/dark themes, and internal multithreading.
+\end{itemize}
+
 \subsection*{CarCartAPI}
 \textit{REST APIs, Java, Spring Boot, MySQL, Spring MVC, Maven, Git}
 \begin{itemize}
@@ -86,19 +98,12 @@ B.A.Sc. in Computer Engineering with Minor in Artificial Intelligence (AI) and B
     \item Supports current and future weather for over 1,000,000 cities, weather alerts, user notifications, 15 different light/dark themes and touch input.
 \end{itemize}
 
-\subsection*{MarkedUp}
-\textit{Python, Virtual Environments, REST APIs, PyQt5, Plotly, Pandas, Git}
-\begin{itemize}
-    \item Python desktop stock market app inspired by Yahoo Finance, built using the TwelveData REST API and PyQT5 GUI library.
-    \item Supports stock quotes for over 20,000 stocks, interactive candlestick charts, smart autocomplete equity search, favourites watchlist, a custom GUI with light/dark themes, and internal multithreading.
-\end{itemize}
-
-\subsection*{SimplyTrack}
-\textit{Python, MySQL, PySimpleGUI, Matplotlib, AES Encryption, Git}
-\begin{itemize}
-    \item Python Financial tracker app that stores financial data in a MySQL database with a GUI built in PySimpleGUI.
-    \item Supports AES 256-bit encryption, data visualization with matplotlib, csv data import, a custom GUI with light/dark themes, bulk data modification and manual data entry.
-\end{itemize}
+% \subsection*{SimplyTrack}
+% \textit{Python, MySQL, PySimpleGUI, Matplotlib, AES Encryption, Git}
+% \begin{itemize}
+%     \item Python Financial tracker app that stores financial data in a MySQL database with a GUI built in PySimpleGUI.
+%     \item Supports AES 256-bit encryption, data visualization with matplotlib, csv data import, a custom GUI with light/dark themes, bulk data modification and manual data entry.
+% \end{itemize}
 
 \subsection*{MatchMap}
 \textit{C++, GTK3, Make, Git, Linux}
