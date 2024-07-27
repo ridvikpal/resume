@@ -1,1 +1,1 @@
-Please view my resume here: [resume.pdf](resume.pdf)
+Please download my resume here: [resume.pdf](resume.pdf?raw=1)
