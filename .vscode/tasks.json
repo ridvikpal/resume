@@ -5,7 +5,7 @@
         {
             "label": "Build LaTeX Resume",
             "type": "shell",
-            "command": "pdflatex -synctex=1 -interaction=nonstopmode -file-line-error ${workspaceFolder}/resume.tex",
+            "command": "pdflatex -interaction=nonstopmode -file-line-error ${workspaceFolder}/resume.tex",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
